@@ -12,37 +12,38 @@
     <div class="container-home">
         <header class="navbar">
 
-
-            <!--Menu mobile-->
-
-            <div class="menu-icon">
-                <input id="checkbox2" type="checkbox">
-                <label class="toggle toggle2" for="checkbox2">
-                    <div id="bar4" class="bars"></div>
-                    <div id="bar5" class="bars"></div>
-                    <div id="bar6" class="bars"></div>
-                </label>
-            </div>
-            
             <!--Menu-->
-            <div id="menu">
-                <img src="./assets/Logo.png" id="logo" alt="">
+            <div id="menu" class="menu">
+                <a href="#home"><img src="./assets/Logo.png" class="logo" id="logoDesktop" alt=""></a>
                 <ul class="menu-items">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Contato</a></li>
-                    <li><a href="#home">Doação</a></li>
+                    <li><a href="#info">Informações</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li id="adotar"><a class="adotar" href="#sobre">Adotar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a id="btnAdotar" href="#adotar">Adotar</a></li>
                 </ul>
+            </div>
+
+            <!--Menu mobile-->
+            <div id="mobile-menu">
+                <a href="#home"><img src="./assets/Logo.png" class="logo" id="logoMobile" alt=""></a>
+                <div class="menu-icon">
+                    <input id="checkbox2" type="checkbox">
+                    <label class="toggle toggle2" for="checkbox2">
+                        <div id="bar4" class="bars"></div>
+                        <div id="bar5" class="bars"></div>
+                        <div id="bar6" class="bars"></div>
+                    </label>
+                </div>
             </div>
         </header>
 
-        <section class="home">
+        <section class="home" id="home">
 
             <img src="./assets/dogHome.png" alt="">
         
             <div class="hero-text">
-                <p >Com a sua ajuda</p>
+                <p>Com a sua ajuda</p>
                 <h1>Nós podemos Salvar os animais que vivem na rua</h1>
                 <p>Abandono de cães nas ruas é um problema real. 
                     Escolha adotar e dar a esses animais uma segunda chance. 
@@ -53,22 +54,23 @@
                 <button class="buttonHome2">
                     Doe uma quantia
                 </button>
+                
                 <p>Nossa outras Redes:</p>
            
-                <a href=""><i class="fab fa-instagram" id="socials"></i>
-                <p id="socials">Instagram</p></a>
-                <a href=""><i class="fab fa-facebook" id="socials"></i>
-                <p id="socials">Facebook</p></a>
+                <a href="#" id="socials"><i class="fab fa-instagram"></i><p>Instagram</p></a>
+                
+                <a href="#" id="socials"><i class="fab fa-facebook"></i><p>Facebook</p></a>
+                
             </div>
         </section>
         <div class="gradient"></div>
     </div>
-    <section class="info">
+    <section class="info" id="info">
         <div class="container-info">
             <div class="cards">
                 <div class="card-content">
                     <img src="./assets/happy.png" alt="">
-                    <p ><span>Conheça Seu Novo Amigo</span></p>
+                    <p><span>Conheça Seu Novo Amigo</span></p>
                     <P>Conheça pessoalmente o animal e 
                         veja se há uma conexão especial,
                         sinta a magia da adoção.</P>
@@ -109,12 +111,11 @@
                         lar, comida e cuidados.</p>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     
-    <section class="container-about">
+    <section class="container-about" id="sobre">
         <div class="about">
-        
           <img src="./assets/catabout.png" alt="">
           <div class="about-text">
           <h1>Quem <span>somos</span> ?</h1>
@@ -130,22 +131,9 @@
     </div>
     </section>
 
-    <section class="container-adotar">
-        <div class="adotar">
-            <h1>Oque está esperando?</h1>
-            <button class="buttonadotar">
-                 Adotar Agora
-            </button>
-        </div>
-    </section>
-
     <section class="container-exp">
         <div class="exp">
-            <div class="exp-text">
-                <h1>
-                    Veja nossas experiências compartilhadas aqui na AdoPet
-                </h1>
-            </div>
+            <h1>Veja nossas experiências compartilhadas aqui na AdoPet</h1>
             <div class="wrapper">
                 <i id="left" class="fas fa-arrow-left"></i>
                 <ul class="carousel">
@@ -182,43 +170,54 @@
               </div>
         </div>
     </section>
-    <footer>
-        <div class="footer">
-            <div class="footer-text">
-               <div class="column1">
-                <h1>Nosso Site</h1>
-                <a href="#home"><p>Home</p></a>
-                <a href="#sobre"><p>Sobre</p></a>
-                <a href="#donate"><p>Doação</p></a>
-                <a href="#adotar"><p>Adotar</p></a>
-                <h1>Mídias Sociais</h1>
-                <a href=""><i class="fab fa-instagram" id="socials-footer"></i></a>
-                <a href=""><i class="fab fa-facebook" id="socials-footer"></i></a>
-               </div>
-               <div class="column2">
-                <h1>Institucional</h1>
-                <a href="#home"><p>Termos e Condições</p></a>
-                <a href="#sobre"><p>Políticas de Cookies</p></a>
-                <a href="#donate"><p>Trabalhe Conosco</p></a>
-                <a href="#adotar"><p>Segurança e Privacidade</p></a>
-                <h1>Contato</h1>
-                <p>contato@adopet.org</p>
-                <p>(+555) 9867-5309</p>
-               </div>
-               <div class="column2">
-                <h1>Institucional</h1>
-                <p id="text-footer">Horário de atendimento:
-                    09:00 às 18:00 -
-                    Segunda a Sexta,
-                    horário de Brasília
-                    (Exceto sábados, domingo e feriados)</p>
-                    <p>Endereço:
-                        Rua João da Silva, 567 -
-                        5° andar - Bairro do Sol Cidade Fictícia/UF
-                        CEP: 12345-678</p>
-               </div>
+
+    <section class="container-adotar" id="adotar">
+        <div class="adotar">
+            <h1>O que está esperando?</h1>
+            <button class="buttonadotar">
+                 Adotar Agora
+            </button>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-section">
+            <div class="footer-content">
+                <div class="column1">
+                    <h1>Nosso Site</h1>
+                    <a href="#home"><p>Home</p></a>
+                    <a href="#sobre"><p>Sobre</p></a>
+                    <a href="#donate"><p>Doação</p></a>
+                    <a href="#adotar"><p>Adotar</p></a>
+                    <h1>Mídias Sociais</h1>
+                    <a href=""><i class="fab fa-instagram" id="socials-footer"></i></a>
+                    <a href=""><i class="fab fa-facebook" id="socials-footer"></i></a>
+                </div>
+                <div class="column2">
+                    <h1>Institucional</h1>
+                    <a href="#home"><p>Termos e Condições</p></a>
+                    <a href="#sobre"><p>Políticas de Cookies</p></a>
+                    <a href="#donate"><p>Trabalhe Conosco</p></a>
+                    <a href="#adotar"><p>Segurança e Privacidade</p></a>
+                    <h1>Contato</h1>
+                    <p>contato@adopet.org</p>
+                    <p>(+555) 9867-5309</p>
+                </div>
+                <div class="column2">
+                    <h1>Institucional</h1>
+                    <p>Horário de atendimento:
+                        09:00 às 18:00 -
+                        Segunda a Sexta,
+                        horário de Brasília
+                        (Exceto sábados, domingo e feriados)</p>
+                        <p>Endereço:
+                            Rua João da Silva, 567 -
+                            5° andar - Bairro do SolCidade Fictícia/UF
+                            CEP: 12345-678</p>
+                </div>
             </div>
         </div>
+        <div class="footer-bottom"><p id="text-footer">© 2024 AdoPets. Todos os direitos reservados.</p></div>
     </footer>
    
     <script src="./script.js"></script>
