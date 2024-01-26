@@ -5,6 +5,11 @@
     padding: 0;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+    
+}
+
+html, body{
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -376,7 +381,7 @@ header.sticky {
 }
 
 .about img{
-    height: 80vh;
+    height: 70vh;
 }
 
 .about h1{
@@ -647,13 +652,7 @@ footer{
 
 /* media queries */
 
-@media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
-  }
-
-@media screen and (max-width: 860px){
+@media screen and (max-width: 980px){
 
     /* NavBar */
 
@@ -737,11 +736,10 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px;
     }
 
     .about img{
-        height: 50vh;
+        height: 50vw;
     }
 
     .about h1{
@@ -826,6 +824,12 @@ footer{
     
 
 }
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
 
 @media screen and (max-width: 700px) {
 
@@ -923,7 +927,7 @@ footer{
     /* about page */
 
     .about img{
-        height: 40vh;
+        height: 40vw;
     }
 
     /* footer */
